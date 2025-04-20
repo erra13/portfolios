@@ -5,95 +5,134 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>портфолио</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
-      font-family: 'Verdana', sans-serif;
-      background: linear-gradient(135deg, #1a1aff, #ff66cc);
-      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #000000, #cc0303);
+      color: #490e0e;
       text-align: center;
       overflow-x: hidden;
+      scroll-behavior: smooth;
     }
     header {
-      padding: 3rem 1rem;
-      background: rgba(0, 0, 0, 0.5);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      padding: 4rem 1rem 2rem;
+      backdrop-filter: blur(10px);
+      background: rgba(14, 0, 0, 0.4);
+      border-bottom: 2px solid rgba(255, 182, 193, 0.4);
     }
     .avatar {
-      width: 150px;
-      height: 150px;
+      width: 160px;
+      height: 160px;
       border-radius: 50%;
       object-fit: cover;
-      box-shadow: 0 0 10px #000;
+      box-shadow: 0 6px 25px rgba(255, 105, 180, 0.6);
       margin-bottom: 1rem;
+      transition: transform 0.3s ease;
+      border: 3px solid #ffe6f1;
+    }
+    .avatar:hover {
+      transform: scale(1.05);
     }
     h1 {
-      font-size: 3rem;
+      font-size: 3.2rem;
       margin: 0;
+      letter-spacing: 2px;
+      color: #960000;
+      text-shadow: 0 0 5px #c90b4a;
     }
     h2 {
       font-size: 2rem;
       margin-top: 0.5rem;
-      color: #ffeb3b;
+      color: #db7070;
+  /*    text-shadow: 0 0 10px #e6e6fa; */
     }
     section {
-      padding: 2rem 1rem;
-      max-width: 800px;
+      padding: 3rem 1rem;
+      max-width: 900px;
       margin: auto;
     }
     .card {
-      background: rgba(255, 255, 255, 0.1);
-      padding: 1rem;
-      margin: 1rem 0;
-      border-radius: 10px;
-      box-shadow: 0 0 10px #000;
-    }
-    footer {
+      background: rgba(255, 255, 255, 0.6);
       padding: 2rem;
-      background: rgba(0, 0, 0, 0.3);
+      margin: 1.5rem 0;
+      border-radius: 20px;
+      box-shadow: 0 12px 40px rgba(186, 85, 211, 0.15);
+      transition: all 0.3s ease;
+      border: 2px solid #ffe4f5;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.8);
+    }
+    a {
+      color: #690404;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #d87093;
     }
     audio {
       margin-top: 2rem;
+      width: 100%;
+      max-width: 400px;
+      outline: none;
+      filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+    }
+    footer {
+      padding: 2rem;
+      background: rgba(51, 1, 1, 0.4);
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      color: #ffffff;
+      border-top: 2px solid #ffc0cb;
     }
     @media screen and (max-width: 600px) {
       h1 { font-size: 2rem; }
-      h2 { font-size: 1.5rem; }
+      h2 { font-size: 1.4rem; }
+      .avatar { width: 120px; height: 120px; }
     }
-  </style>
+  </style>  
 </head>
 <body>
   <header>
     <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.anime-planet.com%2Fimages%2Fcharacters%2Ftomoko-kuroki-36282.jpg%3Ft%3D1487973065&f=1&nofb=1&ipt=6953efd597066898936c75cbbd1246030d0ade50ff955582009476f6a6fd116b" alt="avatar" class="avatar">
-    <h1>capxpq</h1>
+    <h1>travomenchikk</h1>
     <h2>портфолио</h2>
   </header>
 
   <section>
     <div class="card">
       <h3>Обо мне</h3>
-      <p>Я занимаюсь разработкой Lua-скриптов, инжекторов и читов для Roblox. Также у меня есть опыт в доксинге. Работаю быстро и точно. Имею много ников.</p>
+      <p>я занимаюсь разработкой Lua-скриптов, инжекторов и читов для Roblox.<br>
+        также у меня есть опыт в доксинге.<br>
+        я маленький фембойчик <3<br>я комбой, состою в 764 и NLM<br><br>
+        <a href="https://t.me/+BEQUzngup18wNTg0">УСЛУГИ + ПРАЙСЛИСТ</a>
+      </p>
     </div>
 
     <div class="card">
       <h3>Контакты</h3>
-      <p>Discord: <strong>@far20s</strong></p>
-      <p>Roblox ID: <strong>61961910</strong></p>
-      <p>Telegram: <strong>@deletemylife171018</strong></p>
+      <p>Roblox ID: <strong><a href="https://www.roblox.com/users/51951910/profile">61961910</a></strong></p>
+      <p>Telegram: <strong><a href="https://t.me/deletemylife171018">@deletemylife171018</a></strong></p>
     </div>
 
     <div class="card">
-      <h3>Аудио</h3>
-      <audio controls>
+        <p><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia1.tenor.com%2Fm%2FaNRMGr8pKXoAAAAC%2Fadam-lanza.gif&f=1&nofb=1&ipt=8ea6789782783083ab13c252db1c0666868d91b37a11df8818fb8ef062291a63"><br>с него я беру пример</p>
+        <p><img width="320px", height="400px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.tenor.com%2FQaDAVbWJYj0AAAAM%2Fosaka-azumanga-daioh.gif&f=1&nofb=1&ipt=250a00c7212ac7a4041592334d4896e4c63693fd8cece71deb1b3644d2ef1544"><br>это я (хапаю злостно)</p>
+        <audio controls>
         <source src="https://cdn.discordapp.com/attachments/1246918719620255807/1363531719873134754/tmp4upibyow.mp3?ex=68065f5f&is=68050ddf&hm=5f6d687c2f0a16ada0c6dd0dd40df0f36df26b77a1e42e7a2fe9dd0d6f6b6fa4&" type="audio/mpeg" />
         Ваш браузер не поддерживает аудио.
       </audio>
-      <p><em></em></p>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 capxpq. Все права защищены.</p>
+    <p>&copy; 2025 травомен</p>
   </footer>
 </body>
 </html>

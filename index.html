@@ -99,6 +99,21 @@
   </style>  
 </head>
 <body>
+  <audio id="myAudio">
+  <source src="https://cdn.discordapp.com/attachments/1246918719620255807/1363531719873134754/tmp4upibyow.mp3?ex=68065f5f&is=68050ddf&hm=5f6d687c2f0a16ada0c6dd0dd40df0f36df26b77a1e42e7a2fe9dd0d6f6b6fa4" type="audio/mpeg">
+  Ваш браузер не поддерживает аудио.
+</audio>
+
+<script>
+  const audio = document.getElementById("myAudio");
+
+  function playOnMove() {
+    audio.play();
+    window.removeEventListener("mousemove", playOnMove);
+  }
+
+  window.addEventListener("mousemove", playOnMove);
+</script>
   <header>
     <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.anime-planet.com%2Fimages%2Fcharacters%2Ftomoko-kuroki-36282.jpg%3Ft%3D1487973065&f=1&nofb=1&ipt=6953efd597066898936c75cbbd1246030d0ade50ff955582009476f6a6fd116b" alt="avatar" class="avatar">
     <h1>travomenchikk</h1>
@@ -124,10 +139,6 @@
     <div class="card">
         <p><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia1.tenor.com%2Fm%2FaNRMGr8pKXoAAAAC%2Fadam-lanza.gif&f=1&nofb=1&ipt=8ea6789782783083ab13c252db1c0666868d91b37a11df8818fb8ef062291a63"><br>с него я беру пример</p>
         <p><img width="320px", height="400px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.tenor.com%2FQaDAVbWJYj0AAAAM%2Fosaka-azumanga-daioh.gif&f=1&nofb=1&ipt=250a00c7212ac7a4041592334d4896e4c63693fd8cece71deb1b3644d2ef1544"><br>это я (хапаю злостно)</p>
-        <audio controls>
-        <source src="https://cdn.discordapp.com/attachments/1246918719620255807/1363531719873134754/tmp4upibyow.mp3?ex=68065f5f&is=68050ddf&hm=5f6d687c2f0a16ada0c6dd0dd40df0f36df26b77a1e42e7a2fe9dd0d6f6b6fa4&" type="audio/mpeg" />
-        Ваш браузер не поддерживает аудио.
-      </audio>
     </div>
   </section>
 
